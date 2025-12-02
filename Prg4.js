@@ -1,8 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const port = 3000;
-const hostname = '127.0.0.1';
+
 const DATA_FILE = path.join(__dirname,"product.json");
 
 function readProduct() {
@@ -59,7 +58,7 @@ const server = http.createServer((req,res) => {
      }
     });
 
-    server.listen (port,hostname,() => {
-        console.group(`Server rinnung on http://${hostname}:${port}/products`);
+    server.listen (3000,hostname,() => {
+        console.group(`Server rinnung on http://127.0.0.1:3000/products`);
     });
 
