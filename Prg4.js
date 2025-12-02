@@ -20,7 +20,6 @@ function writeProduct(products) {
 const server = http.createServer((req,res) => {
      const url = req.url;
      const method = req.method;
-
      res.setHeader('Content-Type', 'application/json; charset = utf-8');
 
      //GET products
